@@ -10,6 +10,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Active Directory Domain Services
+- Command Prompt
 - PowerShell
 - WireShark
 
@@ -28,26 +29,54 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Deployment and Configuration Steps</h2>
 
-<p>
-<img src="https://i.imgur.com/P9f6XqS.png"/>
+ <p> 
+<img src="https://i.imgur.com/P9f6XqS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Virtual Machine being created in Azure
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+The picture above shows the Virtual Machine being created in Azure
 </p>
 <br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<p>
+ 
+<p>
+<img src="https://i.imgur.com/93KKcVv.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+The picture above shows logging into the virtual machine
+</p>
+<br />
+</p>
+<p>
+</p>
+<p>
+
+<p>
+<img src="https://i.imgur.com/QeehDgp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+The picture above shows the private IP address of Virtual Machine being searched and found
+</p>
+<br />
+</p>
+<p>
+</p>
+<p>
+
+<p>
+<img src="https://i.imgur.com/UiFg89X.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+The picture above shows the use of powershell inside the virtual machine sending a ping to another machine
+</p>
+<br />
+</p>
+<p>
+</p>
+<p>
+
+
+<p>
+<img src="https://i.imgur.com/ium0TJi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+The picture above shows the reply being sent back to our machine through Wireshark
 </p>
 <br />
