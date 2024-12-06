@@ -12,7 +12,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Active Directory Domain Services
 - Command Prompt
 - PowerShell
-- WireShark
+- Group Policy
 
 <h2>Operating Systems Used </h2>
 
@@ -21,19 +21,19 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Create virtual machine
-- Log into virtual machine with Remote Desktop
-- Retrieve IP
-- Ping a public site using Powershell
-- Observe the ping traffic in WireShark
+- Created Domain Controller and a Virtual CPU
+- Assigned the Virtual CPU to the Domain Controller Private IP
+- Created Organizational Groups within the domain controller
+- Assigned the Admin of the virtual CPU into the domain controller
+- Created employee users with Powershell ISE
+- Logged into the domain controller using the employee user's information
 
 <h2>Deployment and Configuration Steps</h2>
 
  <p> 
-<img src="https://i.imgur.com/P9f6XqS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/XkV6EQm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-The picture above shows the Virtual Machine being created in Azure
-</p>
+The IP address of the client computer is being assigned to the same private network as the domain controller
 <br />
 </p>
 <p>
@@ -41,20 +41,9 @@ The picture above shows the Virtual Machine being created in Azure
 <p>
  
 <p>
-<img src="https://i.imgur.com/93KKcVv.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/aOV7LY7.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
-The picture above shows logging into the virtual machine
-</p>
-<br />
-</p>
-<p>
-</p>
-<p>
-
-<p>
-<img src="https://i.imgur.com/QeehDgp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-The picture above shows the private IP address of Virtual Machine being searched and found
+Building an Organizational Unit within the domain controller for employees and admin
 </p>
 <br />
 </p>
@@ -63,9 +52,9 @@ The picture above shows the private IP address of Virtual Machine being searched
 <p>
 
 <p>
-<img src="https://i.imgur.com/UiFg89X.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Bv4c9as.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-The picture above shows the use of powershell inside the virtual machine sending a ping to another machine
+Build and Organizational Unit for the original CPU admin and assign it
 </p>
 <br />
 </p>
@@ -73,10 +62,20 @@ The picture above shows the use of powershell inside the virtual machine sending
 </p>
 <p>
 
+<p>
+<img src="https://i.imgur.com/Ipps5f2.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+</p>
+Create new employee accounts using Powershell ISE for the domain controller
+</p>
+<br />
+</p>
+<p>
+</p>
+<p>
 
 <p>
-<img src="https://i.imgur.com/ium0TJi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/f0glHqD.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
-The picture above shows the reply being sent back to our machine through Wireshark
+Make sure that the employee account is able to sign in successfully
 </p>
 <br />
